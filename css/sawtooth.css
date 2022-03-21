@@ -1,0 +1,181 @@
+/* 优惠券模块 */
+.coupon-mod .container{
+	 position: relative;
+	 padding: 0 5px;
+}
+.sawtooth {
+    background-image: radial-gradient(transparent 0, transparent 4px, #e24141 4px);
+    background-size: 12px 8px;
+    background-position: -5px 10px;
+    position: relative;
+	height: 100%;
+}
+ 
+.sawtooth:before {
+    content: '';
+    display: block;
+    background-color: #e24141;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6px;
+    right: 6px;
+    z-index: -1;
+}
+.coupon-mod .sawtooth{
+	margin: 10px 0;
+	padding:10px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	max-width: 600px;
+}
+.coupon-mod .sawtooth.orange{
+	background-image: radial-gradient(transparent 0, transparent 4px, #f1a40f 4px);
+}
+.coupon-mod .sawtooth.purple{
+	background-image: radial-gradient(transparent 0, transparent 4px, #e665b0 4px);
+}
+.coupon-mod .sawtooth.orange:before{
+	background-color: #f1a40f;
+}
+.coupon-mod .sawtooth.purple:before{
+	background-color: #e665b0;
+}
+.coupon-mod .sawtooth .sawtooth-l{
+	width: 100px;
+	min-width: 100px;
+	height: 80px;
+	background:url(../images/coupon-left.png)
+	no-repeat center / cover;
+	margin: 0 8px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #cb8f18;
+}
+.coupon-mod .sawtooth .sawtooth-l h3{
+	margin: 10px 0 5px 0;
+}
+.coupon-mod .sawtooth .sawtooth-l span{
+	font-size: 16px;
+}
+.coupon-mod .sawtooth .sawtooth-l p{
+	margin-bottom: 0;
+}
+.coupon-mod .sawtooth .line{
+	position: absolute;
+	width: 1px;
+	height: 110%;
+	top: 0;
+	right: -8px;
+	border-right: 1px dashed #888;
+}
+.coupon-mod .sawtooth .line::before,
+.coupon-mod .sawtooth .line::after{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: block;
+	content: '';
+	background: #fff;
+	position: absolute;
+	right: -10px;
+}
+.coupon-mod .sawtooth .line::before{
+	top: -20px;
+}
+.coupon-mod .sawtooth .line::after{
+	bottom: -14px;
+}
+
+.coupon-mod .sawtooth .sawtooth-r{
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid #de9913;
+	box-shadow: 0 0 1px 1px #888;
+	border-radius: 5px;
+	padding: 5px;
+}
+.coupon-mod .sawtooth .sawtooth-r .icon-r{
+	position: absolute;
+	top: 3px;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	background: #f1a40f;
+	border: 1px solid #888;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coupon-mod .sawtooth .sawtooth-r p{
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 12px;
+}
+.coupon-mod .sawtooth .controls,
+.extra-cost-mod .controls{
+	position: relative;
+	width: 90px;
+	height: 30px;
+	border: 1px solid #de9913;
+	padding: 1px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.coupon-mod .sawtooth .controls button,
+.extra-cost-mod .controls button{
+	min-width: 24px;
+	height: 100%;
+	position: absolute;
+	border: none;
+	cursor: pointer;
+	top: 0;
+	background: #fff;
+	font-size: 16px;
+}
+.coupon-mod .sawtooth .controls p,
+.extra-cost-mod .controls p{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f9dc9e;
+	color: #000;
+}
+.coupon-mod .sawtooth .controls .cut,
+.extra-cost-mod .controls .cut{
+	left: 0;
+}
+.coupon-mod .sawtooth .controls .add,
+.extra-cost-mod .controls .add{
+	right: 0;
+}
+
+.coupon-mod .sawtooth.purple .sawtooth-l {
+	color: #c4418a;
+}
+.coupon-mod .sawtooth.purple .controls{
+	border: 1px solid #d3549c;
+}
+.coupon-mod .sawtooth.purple .controls p{
+	background: #f2b6d7;
+	color: #000;
+}
+.coupon-mod .sawtooth.purple .icon-r{
+	background: #e665b0;
+}

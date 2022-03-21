@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul,li{
+	list-style: none;
+}
+.color-green{
+	color:#02cb64;
+}
+.pdr2{
+	padding-right: 2px;
+}
+.pdl2{
+	padding-left: 2px;
+}
+.text-ovf-one{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.text-block-ovf-2{
+	 display: -webkit-box;
+	 -webkit-box-orient: vertical;
+	 -webkit-line-clamp: 2;
+	 overflow: hidden;
+}
+/* 顶部导航 */
+body{
+	padding-bottom: 50px;
+	overflow-x: hidden;
+}
+header{
+	padding: 10px 20px;
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	z-index: 99;
+	max-height: 105px;
+}
+
+header .search-box,
+#search-form{
+	width: 100%;
+	height: 35px;
+}
+#search-form{
+	border-radius: 25px;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+#search-form .search-btn,
+#search-form #search-ipt{
+	height: 100%;
+	border: none;
+	outline: none;
+}
+#search-form #search-ipt{
+	padding: 5px 12px;
+}
+#search-form .search-btn{
+	width: 60px;
+	color: transparent;
+	background: url(../images/search-icon.png)
+	no-repeat 16px 4px / 40% auto;
+}
+#search-form #search-ipt{
+	letter-spacing: 1px;
+	background: transparent;
+	color: #fff;
+}
+#search-ipt::-webkit-input-placeholder{ 
+    color:#fff;
+}
+#search-ipt:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+}
+#search-ipt::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#fff;
+}
+#search-ipt:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#fff;
+}
+
+/* 底部导航 */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #f5f5f5;
+	box-shadow: 0px 0px 2px 2px #888;
+}
+footer .tabs{
+	display: flex;
+	justify-content: space-between;
+}
+footer .tabs .item{
+	display: flex;
+	flex-direction: column;
+}
+footer .tabs .item>span{
+	width: 50px;
+	height: 50px;
+	background: url(../images/sprites.png)
+	no-repeat;
+	transform: scale(.6) translate(3px,-10px);
+}
+footer .tabs .item>span{
+	background-position-y:-97px ;
+}
+footer .tabs .item>span.on{
+	background-position-y:-174px ;
+}
+footer .tabs .item>.travel-icon,
+footer .tabs .item>.travel-icon.on{
+	background-position-y:-250px ;	
+}
+footer .tabs .item>p{
+	text-align: center;
+	font-size: 12px;
+	color: #888;
+	transform: translateY(-15px);
+}
+footer .tabs .mine>p{
+	text-indent: 5px;
+}
+footer .tabs .item>.home-icon{
+	background-position-x: -45px;
+}
+footer .tabs .item>.target-icon{
+	background-position-x: -132px;
+}
+footer .tabs .item>.travel-icon{
+	background-position-x: -548px;
+}
+footer .tabs .item>.history-icon{
+	background-position-x: -210px;
+}
+footer .tabs .item>.my-icon{
+	background-position-x: -293px;
+}
